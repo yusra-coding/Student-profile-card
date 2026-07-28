@@ -1,0 +1,274 @@
+/* Decorative Cute Theme Setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    background-color: #fcf4f6;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px 15px;
+}
+
+/* Main Layout Wrapper */
+.app-container {
+    width: 100%;
+    max-width: 950px;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.app-header h1 {
+    font-family: 'Fredoka', cursive;
+    color: #ff6b8b;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
+.app-header p {
+    color: #887a82;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.workspace {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Editor Input Section */
+.card-editor {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.25);
+    flex: 1;
+    min-width: 310px;
+    border: 2px solid #ffe3eb;
+}
+
+.card-editor h2 {
+    font-family: 'Fredoka', cursive;
+    color: #ff6b8b;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+}
+
+.field-group {
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.field-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #665860;
+    margin-bottom: 5px;
+}
+
+.field-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #ffd6e0;
+    border-radius: 12px;
+    outline: none;
+    font-size: 0.95rem;
+    background: #fffafa;
+}
+
+.field-group input:focus {
+    border-color: #ff6b8b;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 107, 139, 0.2);
+}
+
+.counter-badge {
+    display: block;
+    font-size: 0.75rem;
+    color: #b09ca7;
+    margin-top: 3px;
+    text-align: right;
+}
+
+/* Cute Buttons */
+.action-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+}
+
+.btn-primary { background: #ff85a2; color: #ffffff; }
+.btn-secondary { background: #b39ddb; color: #ffffff; }
+.btn-tertiary { background: #ffd166; color: #4a3e10; }
+.btn-danger { background: #ff6b6b; color: #ffffff; }
+
+/* Cute Profile Card Output */
+.preview-stage {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cute-profile-card {
+    background: #ffd1dc;
+    width: 350px;
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(255, 133, 162, 0.3);
+    text-align: center;
+    position: relative;
+    border: 3px solid #ffffff;
+}
+
+.status-chip {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ffffff;
+    color: #ff6b8b;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.avatar-ring {
+    width: 95px;
+    height: 95px;
+    margin: 10px auto 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 5px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-header-text h3 {
+    font-family: 'Fredoka', cursive;
+    font-size: 1.6rem;
+    color: #2d232e;
+    margin: 2px 0;
+}
+
+.greeting-text {
+    font-size: 0.88rem;
+    color: #ff477e;
+    font-weight: 700;
+}
+
+.date-text {
+    font-size: 0.75rem;
+    color: #6d5964;
+    margin-bottom: 12px;
+}
+
+.bio-quote {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #4a3b44;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    padding: 4px 0;
+    border-bottom: 1px dashed #f0e6eb;
+}
+
+.info-box:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 700;
+    color: #7a6a73;
+}
+
+.info-value {
+    font-weight: 600;
+    color: #2d232e;
+}
+
+/* Soft Dark Theme */
+body.dark-mode {
+    background-color: #1a1625;
+    color: #f0e6eb;
+}
+
+body.dark-mode .card-editor {
+    background: #262033;
+    border-color: #3b324d;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .field-group label {
+    color: #d1c4cb;
+}
+
+body.dark-mode .field-group input {
+    background: #1a1625;
+    border-color: #433857;
+    color: #ffffff;
+}
+
+body.dark-mode .info-grid {
+    background: #1a1625;
+}
+
+body.dark-mode .info-value {
+    color: #f0e6eb;
+}
